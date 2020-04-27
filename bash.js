@@ -4,7 +4,6 @@ process.stdin.on('data', (data) => {
   const cmd = data.toString().trim();
   if (cmd === 'pdw') {
     console.log(process.cwd());
-
     process.stdout.write('\nprompt >');
     return;
   }
